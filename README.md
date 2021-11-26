@@ -9,6 +9,7 @@ Terceiro
 Na raiz do projeto
 'source venv/bin/activate'
 'pip install -r requeriments.txt'
+'python manage.py migrate'
 
 Quarto
 'python manage.py runserver'

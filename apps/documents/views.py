@@ -40,6 +40,7 @@ def home(request):
         paginator = Paginator(documents, 5)
         page = request.GET.get('p')
         documents = paginator.get_page(page)
+        messages.info(request, 'Registro Excluido com sucesso')
         return render(request, "dash.html", context={"documents": documents})
 
     if request.POST.get('cpf_cnpj') is not None:
